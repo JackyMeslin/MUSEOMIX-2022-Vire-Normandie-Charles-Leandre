@@ -1,0 +1,20 @@
+@font-face {
+    font-family: britannic-bold-regular;
+    src: url(britanic.ttf);
+}
+
+body {
+    color:black;
+    background-color:rgb(9, 99, 99);
+    background-repeat: no-repeat;
+    background-size: 80% ;
+    background-image:url(portrait_Charles_Leandre.png);
+    background-position: center;
+    height: 756px;
+    /* max-width: 500px; */
+    margin:0;
+    }
+
+h1  {
+    font-family: 'britannic-bold-regular', sans-serif !important;
+}
