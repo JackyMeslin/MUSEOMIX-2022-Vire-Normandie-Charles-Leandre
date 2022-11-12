@@ -37,13 +37,13 @@
 		})(document,window.navigator,'standalone');
 	</script>
 </head>
-<body>
-    <div class="question-zone pt-8">
-        <h1 class="text-3xl text-center">
-             Bravo vous avez compris<br>
-			 Charles Léandre !
-        </h1>    
-    </div>
+<body class="page-true">
+    
+	<div class="answer-size grid place-content-center">
+		<img src="assets/1-question.png" alt="">
+	</div>
+	
+
 <!-- <div class="video-zone pl-20 absolute flex  justify-center h-screen">
 	<object data="assets/charles-te-parle.mov" type="video/quicktime"  width="525" height="600">
 		<param name="filename" value="assets/charles-te-parle.mov" />  
@@ -56,7 +56,7 @@
 		 </embed>
 	  </object> -->
 <!-- </div> -->
-<div class="pl-20 absolute flex  justify-center h-screen">
+<div class="relative flex  justify-center ">
 	<video width="525" height="600" autoplay poster="assets\Fond bonne reponse.png">
 		<source src="assets/charles-te-parle.mp4" type="video/mp4">
 		
@@ -65,14 +65,16 @@
 </div>
 
 	<div class="flex items-center justify-center h-screen">
-		<!-- Using utilities: -->
+		<!-- Using utilities:
 		<div class="p-4 absolute bottom-0 h-16 grid grid-cols-1 place-items-center">
-			<a href="index.html">
-				<button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
-					Rejouez
-				</button>	
-			</a>
-		</div>
+			<div class="flex items-center justify-center h-screen"> -->
+				<!-- Using utilities: -->
+				<div class="button-home p-8 absolute bottom-20 h-16 grid grid-cols-1 place-items-center">
+					<a href="index.html">
+						<img src="assets/info.png" alt="">
+					</a>
+				</div>
+			
 	</div>
 </body>
 </html>
