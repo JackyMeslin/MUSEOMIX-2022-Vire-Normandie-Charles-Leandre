@@ -18,3 +18,11 @@ body {
 h1  {
     font-family: 'britannic-bold-regular', sans-serif !important;
 }
+
+.question-zone {
+    height: 200px;
+}
+
+.answer-zone {
+    padding-top: 160px;
+}
