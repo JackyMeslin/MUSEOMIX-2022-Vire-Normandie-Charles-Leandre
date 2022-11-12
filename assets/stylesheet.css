@@ -23,7 +23,11 @@
     background-color:rgb(235, 221, 198);
     background-repeat: no-repeat;
     background-size: 100% ;
-    background-image:url(fond-false.png);
+    background-image:url(fond_rouge.jpg);
+}
+
+.button-home img{
+    width: 100px;  
 }
 
 h1  {
@@ -41,7 +45,6 @@ h1  {
     }
 .btn-size {
     width: 400px;
-    
 }
 
 .answer-size {
