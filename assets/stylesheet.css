@@ -9,7 +9,7 @@ body {
     background-repeat: no-repeat;
     background-size: 80% ;
     background-image:url(portrait_Charles_Leandre.png);
-    background-position: center;
+    background-position: center, 150px;
     height: 756px;
     /* max-width: 500px; */
     margin:0;
