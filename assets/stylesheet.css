@@ -1,26 +1,72 @@
 @font-face {
     font-family: britannic-bold-regular;
     src: url(britanic.ttf);
+
+    font-family: bahnschrift;
+    src: url(bahnschrift.ttf);
 }
 
-body {
-    color:black;
-    background-color:rgb(9, 99, 99);
+.page-accueil {
+    
+    color:rgb(154, 22, 22);
+    background-color:rgb(235, 221, 198);
     background-repeat: no-repeat;
-    background-size: 60% ;
-    background-image:url(portrait_Charles_Leandre.png);
-    background-position: center, 150px;
-    height: 756px;
+    background-size: 100% ;
+    background-image:url(fond-1.png);
+    /* background-position: center, 150px;
+    height: 756px; */
     /* max-width: 500px; */
-    margin:0;
+    /* margin:0; */ */
     }
 
 h1  {
     font-family: 'britannic-bold-regular', sans-serif !important;
+    font-size: 22px ;
 }
 
+.answer-button {
+    font-family: 'bahnschrift', sans-serif !important;
+    font-size: 17px ;
+    background: url('bouton-b.png') no-repeat !important;
+    background-size: cover !important;
+    /* background-size: 100%; */
+    /* padding: 2px 8px; */
+    }
+.btn-size {
+    width: 300px;
+    
+}
+
+
+.answer-button-1 {
+    /* font-family: 'bahnschrift', sans-serif !important;
+    font-size: 17px ; */
+    background: url('1-rep-A.png')  !important;
+    /* background-size: cover !important; */
+    /* background-size: 10%; */
+    background-size: 10%;
+            width: 300px;
+            height: 200px;
+    /* padding: 2px 8px; */
+    }
+
+    /* button {
+        font-family: 'bahnschrift', sans-serif !important;
+        font-size: 17px ;
+        background: url('bouton-b.png') no-repeat !important;
+        background-size: cover !important;
+        /* background-size: 100%; */
+        /* padding: 2px 8px; */
+        } */
+
 .question-zone {
-    height: 100px;
+    position: relative;
+    padding-top: 150px;
+    /* padding-left: 40px; */
+    /* height: 100px; */
+    background: url('1-question.png') no-repeat center !important;
+    background-size: 90% !important;
+    background-position: center;
 }
 
 .answer-zone {
