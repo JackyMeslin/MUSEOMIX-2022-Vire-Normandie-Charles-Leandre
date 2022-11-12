@@ -12,7 +12,7 @@
     background-color:rgb(235, 221, 198);
     background-repeat: no-repeat;
     background-size: 100% ;
-    background-image:url(fond-1.png);
+    background-image:url(fond_beige.jpg);
     /* background-position: center, 150px;
     height: 756px; */
     /* max-width: 500px; */
@@ -23,7 +23,7 @@
     background-color:rgb(235, 221, 198);
     background-repeat: no-repeat;
     background-size: 100% ;
-    background-image:url(fond-1.png);
+    background-image:url(fond-false.png);
 }
 
 h1  {
