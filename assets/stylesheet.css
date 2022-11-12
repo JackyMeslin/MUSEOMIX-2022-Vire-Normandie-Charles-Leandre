@@ -19,6 +19,13 @@
     /* margin:0; */ */
     }
 
+.page-false {
+    background-color:rgb(235, 221, 198);
+    background-repeat: no-repeat;
+    background-size: 100% ;
+    background-image:url(fond-1.png);
+}
+
 h1  {
     font-family: 'britannic-bold-regular', sans-serif !important;
     font-size: 22px ;
@@ -39,7 +46,7 @@ h1  {
 
 .answer-size {
     width: 400px;
-    padding-top: 150px;
+    padding-top: 200px;
     margin: auto;
 }
 
