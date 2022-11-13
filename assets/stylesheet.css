@@ -20,7 +20,10 @@
     }
 
 video{
-    max-width: 150% !important;
+    padding-top: 10px;
+    max-width: 130% !important;
+    max-height: 100% !important;
+
 }
 
 .page-false {
@@ -95,7 +98,7 @@ p {
         background-size: cover !important;
         /* background-size: 100%; */
         /* padding: 2px 8px; */
-        } */
+        /*} */
 
 .question-zone {
     position: relative;
