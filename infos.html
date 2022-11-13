@@ -40,7 +40,7 @@
 <body class="page-accueil">
     
 	<div class="answer-size grid place-content-center">
-		<img src="assets/1-question.png" alt="">
+		
 	</div>
 	
 
@@ -57,7 +57,7 @@
 	  </object> -->
 <!-- </div> -->
 <div class="relative flex pt-4 justify-center ">
-	<video width="525" height="600" autoplay >
+	<video autoplaypreload="auto" id="idvideo" onclick="fctPlay('idvideo')">
 		<source src="assets\rue_des_nations_infos.mp4" type="video/mp4">
 		
 	  Your browser does not support the video tag.
@@ -76,5 +76,32 @@
 				</div>
 			
 	</div>
+
+	<script>
+		function fctAutoplay(sIdVideo){
+		  var oVideo = document.getElementById(sIdVideo);
+		  oVideo.autoplay = true;
+		}//fct 
+		
+		function fctPlay(sIdVideo){
+		  var oVideo = document.getElementById(sIdVideo);
+		  var playPromise = oVideo.play();
+		
+		  if (playPromise !== undefined) {
+			playPromise.then(function() {
+			  //  
+			}).catch(function(error) {
+			  var oDetect = document.getElementById("detect"+sIdVideo);
+			  if(oDetect){
+				oDetect.innerHTML = "(on la détecté en javascript que la vidéo ne c'est pas lancée)";
+			  }
+			});
+		  }
+		}//fct 
+		
+		document.addEventListener('DOMContentLoaded',function(){
+		  fctAutoplay('idvideo');
+		});
+		</script>
 </body>
 </html>
