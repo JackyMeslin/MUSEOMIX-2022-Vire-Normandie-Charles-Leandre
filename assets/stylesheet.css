@@ -41,6 +41,7 @@ video{
 }
 
 .page-true {
+    color:rgb(154, 22, 22);
     background-color:rgb(235, 221, 198);
     background-repeat: no-repeat;
     background-size: 100% ;
