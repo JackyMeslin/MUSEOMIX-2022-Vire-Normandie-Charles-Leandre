@@ -38,19 +38,13 @@
 	</script>
 </head>
 <body class="page-true">
-    <div class="flex items-center justify-center h-screen">
-		<!-- Using utilities:
-		<div class="p-4 absolute bottom-0 h-16 grid grid-cols-1 place-items-center">
-			<div class="flex items-center justify-center h-screen"> -->
-				<!-- Using utilities: -->
-				<div class="button-home p-8  h-16 grid grid-cols-1 place-items-center">
-					
-						<img src="assets/info.png" alt="" onclick="fctPlay('idvideo')">
-					
-				</div>
-			
-	</div>
+   
 
+	<div class="answer-size grid place-content-center">
+		<p>Cliquez sur l'image pour lancer l'animation</p>
+		
+	</div>
+	
 
 <!-- <div class="video-zone pl-20 absolute flex  justify-center h-screen">
 	<object data="assets/charles-te-parle.mov" type="video/quicktime"  width="525" height="600">
@@ -65,17 +59,12 @@
 	  </object> -->
 <!-- </div> -->
 <div class="relative flex pt-4 justify-center ">
-	<video width="525" height="600" autoplaypreload="auto" id="idvideo">
+	<video autoplaypreload="auto" id="idvideo" onclick="fctPlay('idvideo')">
 		<source src="assets/Nations.mp4" type="video/mp4">
 		
 	  Your browser does not support the video tag.
 	</video>
-	<figcaption>
-		<div class="button-home">
-			<button  type="button" onclick="fctPlay('idvideo')">play()</button>
-	doit jouer la vidéo
-		</div>
-	</figcaption>
+	
 </div>
 
 <script>
