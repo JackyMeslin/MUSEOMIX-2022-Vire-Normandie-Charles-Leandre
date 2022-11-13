@@ -38,11 +38,19 @@
 	</script>
 </head>
 <body class="page-true">
-    
-	<div class="answer-size grid place-content-center">
-		<img src="assets/1-question.png" alt="">
+    <div class="flex items-center justify-center h-screen">
+		<!-- Using utilities:
+		<div class="p-4 absolute bottom-0 h-16 grid grid-cols-1 place-items-center">
+			<div class="flex items-center justify-center h-screen"> -->
+				<!-- Using utilities: -->
+				<div class="button-home p-8  h-16 grid grid-cols-1 place-items-center">
+					
+						<img src="assets/info.png" alt="" onclick="fctPlay('idvideo')">
+					
+				</div>
+			
 	</div>
-	
+
 
 <!-- <div class="video-zone pl-20 absolute flex  justify-center h-screen">
 	<object data="assets/charles-te-parle.mov" type="video/quicktime"  width="525" height="600">
@@ -69,8 +77,9 @@
 		</div>
 	</figcaption>
 </div>
+
 <script>
-    function fctAutoplay(sIdVideo){
+function fctAutoplay(sIdVideo){
   var oVideo = document.getElementById(sIdVideo);
   oVideo.autoplay = true;
 }//fct 
@@ -92,9 +101,11 @@ function fctPlay(sIdVideo){
 }//fct 
 
 document.addEventListener('DOMContentLoaded',function(){
-  //fctAutoplay('idvideo');
-  fctPlay('idvideoB')
-  fctPlay('idvideoB2')
+  fctAutoplay('idvideo');
+//   fctAutoplay('idvideoA');
+//   fctAutoplay('idvideoA2'); 
+//   fctPlay('idvideoB')
+//   fctPlay('idvideoB2')
 });
 </script>
 
