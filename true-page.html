@@ -57,12 +57,25 @@
 	  </object> -->
 <!-- </div> -->
 <div class="relative flex pt-4 justify-center ">
-	<video width="525" height="600" controls autoplay muted defaultmuted playsinline>
+	<video width="525" height="600" controls autoplay="" loop="" muted="" muted defaultmuted playsinline>
 		<source src="assets/Nations.mp4" type="video/mp4">
 		
 	  Your browser does not support the video tag.
 	  </video> 
 </div>
+<script>
+	$(document).ready(function(){
+  $("video").prop('muted', true);
+
+  $("video").click( function (){
+      $(this).prop('muted', !$(this).prop('muted'));
+  });
+
+  $(".play-video").click( function (){
+      $("video").prop('muted', !$("video").prop('muted'));
+  });
+});
+	</script>
 
 	<div class="flex items-center justify-center h-screen">
 		<!-- Using utilities:
