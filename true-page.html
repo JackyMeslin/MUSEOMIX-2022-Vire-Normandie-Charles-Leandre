@@ -57,25 +57,46 @@
 	  </object> -->
 <!-- </div> -->
 <div class="relative flex pt-4 justify-center ">
-	<video width="525" height="600" controls autoplay="" loop="" muted="" muted defaultmuted playsinline>
+	<video width="525" height="600" autoplaypreload="auto" id="idvideo">
 		<source src="assets/Nations.mp4" type="video/mp4">
 		
 	  Your browser does not support the video tag.
-	  </video> 
+	</video>
+	<figcaption>
+		<div class="button-home">
+			<button  type="button" onclick="fctPlay('idvideo')">play()</button>
+	doit jouer la vidéo
+		</div>
+	</figcaption>
 </div>
 <script>
-	$(document).ready(function(){
-  $("video").prop('muted', true);
+    function fctAutoplay(sIdVideo){
+  var oVideo = document.getElementById(sIdVideo);
+  oVideo.autoplay = true;
+}//fct 
 
-  $("video").click( function (){
-      $(this).prop('muted', !$(this).prop('muted'));
-  });
+function fctPlay(sIdVideo){
+  var oVideo = document.getElementById(sIdVideo);
+  var playPromise = oVideo.play();
 
-  $(".play-video").click( function (){
-      $("video").prop('muted', !$("video").prop('muted'));
-  });
+  if (playPromise !== undefined) {
+    playPromise.then(function() {
+      //  
+    }).catch(function(error) {
+      var oDetect = document.getElementById("detect"+sIdVideo);
+      if(oDetect){
+        oDetect.innerHTML = "(on la détecté en javascript que la vidéo ne c'est pas lancée)";
+      }
+    });
+  }
+}//fct 
+
+document.addEventListener('DOMContentLoaded',function(){
+  //fctAutoplay('idvideo');
+  fctPlay('idvideoB')
+  fctPlay('idvideoB2')
 });
-	</script>
+</script>
 
 	<div class="flex items-center justify-center h-screen">
 		<!-- Using utilities:
